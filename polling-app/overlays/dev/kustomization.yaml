@@ -1,0 +1,9 @@
+resources:
+  - ../../base
+
+patchesStrategicMerge:
+  - patch-env.yaml
+
+images:
+  - name: yourregistry/polling-app
+    newTag: dev-latest
