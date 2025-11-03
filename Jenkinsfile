@@ -42,6 +42,7 @@ pipeline {
             echo "Deploying ${APP} using overlay ${TARGET}"
             kubectl version --client
             kubectl config current-context
+            cd ${WORKSPACE}              # 👈 Added this line
             kubectl apply -k ${TARGET}
             kubectl rollout status deployment/${APP} --timeout=60s || true
             kubectl get deploy,svc -l app=${APP} -o wide
