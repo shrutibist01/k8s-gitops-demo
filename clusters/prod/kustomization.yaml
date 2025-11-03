@@ -1,2 +1,2 @@
 resources:
-  - ../../polling-app/overlays/prod  # for prod
+  - ../../polling-app/overlays/prod

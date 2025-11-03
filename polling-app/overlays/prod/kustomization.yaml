@@ -3,7 +3,3 @@ resources:
 
 patchesStrategicMerge:
   - patch-env.yaml
-
-images:
-  - name: yourregistry/polling-app
-    newTag: prod-latest
